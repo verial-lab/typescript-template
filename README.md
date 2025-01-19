@@ -12,6 +12,8 @@ A modern TypeScript template with automated dependency updates and best practice
 
 ## Features
 
+_See [README-tooling.md](README-tooling.md) for more details._
+
 - 🚀 TypeScript 5.x
 - 📦 pnpm for fast, efficient package management
 - 🧪 Jest for testing
