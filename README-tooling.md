@@ -12,3 +12,5 @@
 - **CI/CD**: GitHub Actions
   - [GitHub Actions](https://docs.github.com/en/actions/learn-github-actions)
   - [renovatebot](https://docs.renovatebot.com/getting-started/use-cases/) - Automated dependency updates
+- **AI**:
+  - [codebasecontext](https://codebasecontext.org/)
