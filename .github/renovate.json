@@ -1,36 +1,21 @@
 {
-    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "extends": [
-        "config:base"
-    ],
-    "packageRules": [
-        {
-            "matchUpdateTypes": [
-                "minor",
-                "patch"
-            ],
-            "automerge": true
-        },
-        {
-            "matchDepTypes": [
-                "devDependencies"
-            ],
-            "automerge": true
-        }
-    ],
-    "schedule": [
-        "every weekend"
-    ],
-    "timezone": "UTC",
-    "labels": [
-        "dependencies"
-    ],
-    "assignees": [
-        "your-github-username"
-    ],
-    "reviewers": [
-        "your-github-username"
-    ],
-    "prHourlyLimit": 4,
-    "prConcurrentLimit": 5
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:base"],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
+    },
+    {
+      "matchDepTypes": ["devDependencies"],
+      "automerge": true
+    }
+  ],
+  "schedule": ["every weekend"],
+  "timezone": "UTC",
+  "labels": ["dependencies"],
+  "assignees": ["your-github-username"],
+  "reviewers": ["your-github-username"],
+  "prHourlyLimit": 4,
+  "prConcurrentLimit": 5
 }

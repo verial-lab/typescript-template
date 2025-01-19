@@ -2,37 +2,37 @@ name: Update Dependencies
 
 on:
   schedule:
-    - cron: '0 0 * * 0'  # Runs weekly on Sunday at midnight
-  workflow_dispatch:      # Allows manual trigger
+    - cron: "0 0 * * 0" # Runs weekly on Sunday at midnight
+  workflow_dispatch: # Allows manual trigger
 
 jobs:
   update-deps:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-      
+          node-version: "20"
+
       - uses: pnpm/action-setup@v2
         with:
-          version: 'latest'
-      
+          version: "latest"
+
       - name: Update dependencies
         run: |
           pnpm update --latest
-          
+
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
         with:
-          commit-message: 'chore(deps): update dependencies'
-          title: '🤖 Update Dependencies'
-          body: 'Updated dependencies to their latest versions'
+          commit-message: "chore(deps): update dependencies"
+          title: "🤖 Update Dependencies"
+          body: "Updated dependencies to their latest versions"
           branch: update-dependencies
           delete-branch: true
-          
+
       - name: Run tests
         run: |
           pnpm install
