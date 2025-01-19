@@ -2,12 +2,12 @@
   "name": "typescript-template",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/app.js",
   "type": "module",
   "packageManager": "pnpm@9.14.0",
   "scripts": {
     "build": "tsc",
-    "dev": "ts-node-dev --respawn --transpile-only app.ts",
+    "dev": "tsx watch app.ts",
     "lint": "eslint . && prettier --check .",
     "lint:fix": "eslint . --fix && prettier --write .",
     "test": "jest",
@@ -17,6 +17,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  },
   "devDependencies": {
     "@eslint/js": "^9.18.0",
     "@types/jest": "^29.5.14",
@@ -27,7 +30,7 @@
     "lint-staged": "^15.4.1",
     "prettier": "3.4.2",
     "ts-jest": "^29.2.5",
-    "ts-node": "^10.9.2",
+    "tsx": "^4.19.2",
     "typescript": "^5.7.3",
     "typescript-eslint": "^8.20.0"
   },
