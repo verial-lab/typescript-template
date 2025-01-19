@@ -1,5 +1,13 @@
 # TypeScript Project Template
 
+<!--
+FIXME
+1. CMD + SHIFT +F verial-eth/typescript-template
+2. Replace with your username/repo
+ -->
+
+[![Lint & Test](https://github.com/verial-eth/typescript-template/actions/workflows/lint-test.yml/badge.svg)](https://github.com/verial-eth/typescript-template/actions/workflows/lint-test.yml)
+
 A modern TypeScript template with automated dependency updates and best practices.
 
 ## Features
