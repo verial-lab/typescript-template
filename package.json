@@ -10,7 +10,9 @@
     "dev": "tsx watch app.ts",
     "lint": "eslint . && prettier --check .",
     "lint:fix": "eslint . --fix && prettier --write .",
+    "lint:ci": "pnpm run lint",
     "test": "jest",
+    "test:ci": "pnpm run test",
     "prepare": "husky",
     "preinstall": "npx only-allow pnpm"
   },
