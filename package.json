@@ -14,7 +14,8 @@
     "test": "jest",
     "test:ci": "pnpm run test",
     "prepare": "husky",
-    "preinstall": "npx only-allow pnpm"
+    "preinstall": "npx only-allow pnpm",
+    "check:repo": "pnpm install && pnpm build && pnpm lint && pnpm test"
   },
   "keywords": [],
   "author": "",
