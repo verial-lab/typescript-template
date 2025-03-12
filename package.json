@@ -1,5 +1,5 @@
 {
-  "name": "typescript-template",
+  "name": "@verial-lab/typescript-template",
   "version": "0.1.0",
   "description": "",
   "main": "dist/app.js",
